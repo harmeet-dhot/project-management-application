@@ -1,0 +1,932 @@
+2020-02-26 17:34:38.528  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 17:34:38.529 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 17:34:38.529  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 17:34:39.037  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 17:34:39.053  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 2 repository interfaces.
+2020-02-26 17:34:39.176  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 17:34:39.454  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 17:34:39.467  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 933 ms
+2020-02-26 17:34:39.850  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 17:34:40.096  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@638adeaa, org.springframework.security.web.context.SecurityContextPersistenceFilter@a128f03, org.springframework.security.web.header.HeaderWriterFilter@566313b1, org.springframework.security.web.csrf.CsrfFilter@3002e99b, org.springframework.security.web.authentication.logout.LogoutFilter@41f353df, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47d083c5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5f07a5ab, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6ee443e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6be8cdf4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63965f04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2da6265c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45e3218d, org.springframework.security.web.session.SessionManagementFilter@2dfbe516, org.springframework.security.web.access.ExceptionTranslationFilter@3aca74f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@353a0772]
+2020-02-26 17:34:40.237  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 17:34:40.248  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 17:34:40.435  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 17:34:40.473  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 17:34:40.476  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 2.286 seconds (JVM running for 15373.229)
+2020-02-26 17:34:40.481  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 17:35:23.297  INFO 881 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 17:35:23.303  INFO 881 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 17:35:23.762  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 17:35:23.764 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 17:35:23.764  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 17:35:24.120  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 17:35:24.131  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 2 repository interfaces.
+2020-02-26 17:35:24.339  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 17:35:24.552  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 17:35:24.568  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 799 ms
+2020-02-26 17:35:24.927  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 17:35:25.094  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33093de7, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b7fdfba, org.springframework.security.web.header.HeaderWriterFilter@1f486eb, org.springframework.security.web.csrf.CsrfFilter@5b1a2a2e, org.springframework.security.web.authentication.logout.LogoutFilter@40a76f16, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74bb123a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55b0e815, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2c8d28e2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7773257b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67e852ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@420e5337, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bd58b, org.springframework.security.web.session.SessionManagementFilter@613ec2e9, org.springframework.security.web.access.ExceptionTranslationFilter@3c8613b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c5c78fc]
+2020-02-26 17:35:25.179  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 17:35:25.190  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 17:35:25.306  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 17:35:25.357  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 17:35:25.358  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.648 seconds (JVM running for 15418.108)
+2020-02-26 17:35:25.369  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 17:41:53.325  INFO 881 --- [Thread-63] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 17:41:53.340  INFO 881 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 17:41:54.238  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 17:41:54.238 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 17:41:54.238  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 17:41:54.628  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 17:41:54.644  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 2 repository interfaces.
+2020-02-26 17:41:54.734  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 17:41:54.886  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 17:41:54.895  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 653 ms
+2020-02-26 17:41:55.203  WARN 881 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+2020-02-26 17:41:55.227  INFO 881 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-26 17:41:55.244 ERROR 881 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.ctc.pma.Application.main(Application.java:26) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 21 common frames omitted
+
+2020-02-26 17:48:56.824  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 17:48:56.825 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 17:48:56.826  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 17:48:57.587  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 17:48:57.634  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-02-26 17:48:57.791  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 17:48:58.022  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 17:48:58.035  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1201 ms
+2020-02-26 17:48:58.334  WARN 881 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+2020-02-26 17:48:58.353  INFO 881 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-26 17:48:58.356 ERROR 881 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.ctc.pma.Application.main(Application.java:26) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 21 common frames omitted
+
+2020-02-26 18:01:20.264  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:01:20.266 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:01:20.266  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:01:20.488  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:01:20.500  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 repository interfaces.
+2020-02-26 18:01:20.556  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:01:20.713  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:01:20.722  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 454 ms
+2020-02-26 18:01:20.930  WARN 881 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+2020-02-26 18:01:20.941  INFO 881 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-26 18:01:20.942 ERROR 881 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.ctc.pma.Application.main(Application.java:26) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 21 common frames omitted
+
+2020-02-26 18:01:42.570  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:01:42.571 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:01:42.571  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:01:42.792  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:01:42.801  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 2 repository interfaces.
+2020-02-26 18:01:42.852  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:01:42.930  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:01:42.940  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 365 ms
+2020-02-26 18:01:43.152  WARN 881 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+2020-02-26 18:01:43.161  INFO 881 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-26 18:01:43.162 ERROR 881 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.ctc.pma.Application.main(Application.java:26) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 21 common frames omitted
+
+2020-02-26 18:03:40.900  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:03:40.902 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:03:40.902  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:03:41.101  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:03:41.110  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 2 repository interfaces.
+2020-02-26 18:03:41.165  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:03:41.233  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:03:41.241  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 337 ms
+2020-02-26 18:03:41.406  WARN 881 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+2020-02-26 18:03:41.413  INFO 881 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-26 18:03:41.414 ERROR 881 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.ctc.pma.Application.main(Application.java:26) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.ctc.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 21 common frames omitted
+
+2020-02-26 18:10:32.293  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:10:32.294 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:10:32.294  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:10:32.549  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:10:32.562  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 repository interfaces.
+2020-02-26 18:10:32.718  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:10:32.922  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:10:32.932  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 634 ms
+2020-02-26 18:10:33.200  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:10:33.366  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@208dff86, org.springframework.security.web.context.SecurityContextPersistenceFilter@215ca1f5, org.springframework.security.web.header.HeaderWriterFilter@4b0ae821, org.springframework.security.web.csrf.CsrfFilter@4b903dd4, org.springframework.security.web.authentication.logout.LogoutFilter@37d7af8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@730d242d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@476a38e9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@737f7ea2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7282c1b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e557425, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@120f9568, org.springframework.security.web.session.SessionManagementFilter@6b685fd1, org.springframework.security.web.access.ExceptionTranslationFilter@58816193, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e73ec41]
+2020-02-26 18:10:33.456  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:10:33.465  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 18:10:33.567  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 18:10:33.602  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 18:10:33.605  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.533 seconds (JVM running for 17526.267)
+2020-02-26 18:10:33.610  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 18:14:46.800  INFO 881 --- [Thread-72] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:14:46.805  INFO 881 --- [Thread-72] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:14:47.291  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:14:47.291 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:14:47.292  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:14:47.568  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:14:47.581  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 repository interfaces.
+2020-02-26 18:14:47.672  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:14:47.758  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:14:47.769  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 475 ms
+2020-02-26 18:14:48.031  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:14:48.185  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c9d6116, org.springframework.security.web.context.SecurityContextPersistenceFilter@5bddb982, org.springframework.security.web.header.HeaderWriterFilter@2b20025c, org.springframework.security.web.csrf.CsrfFilter@5eef3d6e, org.springframework.security.web.authentication.logout.LogoutFilter@206dcc9a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ec5969a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@16ca6668, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@28d85ee9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36dfab94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d466df1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48fb4769, org.springframework.security.web.session.SessionManagementFilter@7cfeff3e, org.springframework.security.web.access.ExceptionTranslationFilter@349b2e9b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f3defd4]
+2020-02-26 18:14:48.261  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:14:48.281  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 18:14:48.404  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 18:14:48.437  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 18:14:48.438  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.168 seconds (JVM running for 17781.087)
+2020-02-26 18:14:48.445  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 18:19:11.749  INFO 881 --- [Thread-101] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:19:11.756  INFO 881 --- [Thread-101] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:19:12.392  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:19:12.393 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:19:12.393  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:19:12.686  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:19:12.695  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 2 repository interfaces.
+2020-02-26 18:19:12.754  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:19:12.856  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:19:12.878  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 481 ms
+2020-02-26 18:19:13.278  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:19:13.518  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29bd3d63, org.springframework.security.web.context.SecurityContextPersistenceFilter@59dd13a4, org.springframework.security.web.header.HeaderWriterFilter@8af5ef1, org.springframework.security.web.csrf.CsrfFilter@758c3273, org.springframework.security.web.authentication.logout.LogoutFilter@566c9ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@496d6bab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@671df182, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77295694, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6de7ceb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f4d4d2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fe85854, org.springframework.security.web.session.SessionManagementFilter@4dd6bfc7, org.springframework.security.web.access.ExceptionTranslationFilter@5f0d7067, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66e1d91c]
+2020-02-26 18:19:13.676  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:19:13.688  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 18:19:13.842  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 18:19:13.868  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 18:19:13.872  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.673 seconds (JVM running for 18046.514)
+2020-02-26 18:19:13.877  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 18:22:21.397  INFO 881 --- [Thread-110] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:22:21.400  INFO 881 --- [Thread-110] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:22:22.099  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 18:22:22.100 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 18:22:22.100  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 18:22:22.495  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 18:22:22.525  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 2 repository interfaces.
+2020-02-26 18:22:22.638  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 18:22:22.718  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 18:22:22.724  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 622 ms
+2020-02-26 18:22:23.110  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 18:22:23.272  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b141ebc, org.springframework.security.web.context.SecurityContextPersistenceFilter@117f8e49, org.springframework.security.web.header.HeaderWriterFilter@5cc1b781, org.springframework.security.web.csrf.CsrfFilter@314fe079, org.springframework.security.web.authentication.logout.LogoutFilter@f490828, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5442ca9e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62a9dff2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69e750f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@347bcd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52eb7e81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6351d0e8, org.springframework.security.web.session.SessionManagementFilter@5ffdf1e7, org.springframework.security.web.access.ExceptionTranslationFilter@683f42ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b343102]
+2020-02-26 18:22:23.356  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 18:22:23.364  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 18:22:23.483  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 18:22:23.511  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 18:22:23.512  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.608 seconds (JVM running for 18236.148)
+2020-02-26 18:22:23.516  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:10:00.257  INFO 881 --- [Thread-119] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:10:00.263  INFO 881 --- [Thread-119] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:10:01.013  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:10:01.014 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:10:01.014  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:10:01.375  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:10:01.389  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 repository interfaces.
+2020-02-26 21:10:01.505  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:10:01.606  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:10:01.616  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 599 ms
+2020-02-26 21:10:01.911  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:10:02.192  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51154c68, org.springframework.security.web.context.SecurityContextPersistenceFilter@4aed5475, org.springframework.security.web.header.HeaderWriterFilter@21534621, org.springframework.security.web.csrf.CsrfFilter@77186f37, org.springframework.security.web.authentication.logout.LogoutFilter@1887b5ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2acd6d03, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3869004e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@728de588, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3adb84f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@102bfc1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@204cc94f, org.springframework.security.web.session.SessionManagementFilter@7eb8fd42, org.springframework.security.web.access.ExceptionTranslationFilter@10bc1f52, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25a1937]
+2020-02-26 21:10:02.360  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:10:02.373  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:10:02.578  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:10:02.605  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:10:02.606  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.815 seconds (JVM running for 28294.817)
+2020-02-26 21:10:02.613  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:12:47.609  INFO 881 --- [Thread-128] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:12:47.612  INFO 881 --- [Thread-128] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:12:47.887  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:12:47.887 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:12:47.887  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:12:48.158  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:12:48.167  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 2 repository interfaces.
+2020-02-26 21:12:48.227  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:12:48.297  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:12:48.304  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 414 ms
+2020-02-26 21:12:48.535  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:12:48.672  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@825df6, org.springframework.security.web.context.SecurityContextPersistenceFilter@8b6f874, org.springframework.security.web.header.HeaderWriterFilter@5715086d, org.springframework.security.web.csrf.CsrfFilter@70af603f, org.springframework.security.web.authentication.logout.LogoutFilter@28a670ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d85b979, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@176c5f6c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a899e72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75be4673, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a976ec9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40148f8d, org.springframework.security.web.session.SessionManagementFilter@313ceb1, org.springframework.security.web.access.ExceptionTranslationFilter@4167925b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5eaa97b1]
+2020-02-26 21:12:48.741  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:12:48.748  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:12:48.849  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:12:48.871  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:12:48.872  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.012 seconds (JVM running for 28461.067)
+2020-02-26 21:12:48.895  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:13:03.418  INFO 881 --- [Thread-137] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:13:03.421  INFO 881 --- [Thread-137] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:13:03.764  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:13:03.765 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:13:03.765  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:13:04.091  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:13:04.118  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 3 repository interfaces.
+2020-02-26 21:13:04.214  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:13:04.305  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:13:04.315  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 548 ms
+2020-02-26 21:13:04.659  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:13:04.806  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5348396a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fb10821, org.springframework.security.web.header.HeaderWriterFilter@572e8a6c, org.springframework.security.web.csrf.CsrfFilter@3ab4c9c3, org.springframework.security.web.authentication.logout.LogoutFilter@20104fa5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d29744d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77b7b172, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3d8ba965, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e9e4c25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d40ce70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12655974, org.springframework.security.web.session.SessionManagementFilter@43573b59, org.springframework.security.web.access.ExceptionTranslationFilter@7d9199f3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7751686]
+2020-02-26 21:13:04.918  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:13:04.936  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:13:05.155  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:13:05.184  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:13:05.186  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.484 seconds (JVM running for 28477.379)
+2020-02-26 21:13:05.203  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:32:03.736  INFO 881 --- [Thread-146] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:32:03.742  INFO 881 --- [Thread-146] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:32:04.464  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:32:04.464 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:32:04.464  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:32:04.706  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:32:04.719  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 3 repository interfaces.
+2020-02-26 21:32:04.773  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:32:04.852  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:32:04.864  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 398 ms
+2020-02-26 21:32:05.082  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:32:05.240  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@135d437, org.springframework.security.web.context.SecurityContextPersistenceFilter@685c16df, org.springframework.security.web.header.HeaderWriterFilter@ef4112f, org.springframework.security.web.csrf.CsrfFilter@5fd94a77, org.springframework.security.web.authentication.logout.LogoutFilter@5a19dbc1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c0d1bd4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52fbc5af, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2152a90f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a02f9a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3451eea6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49834075, org.springframework.security.web.session.SessionManagementFilter@7dc371e2, org.springframework.security.web.access.ExceptionTranslationFilter@1add0e2a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23197404]
+2020-02-26 21:32:05.302  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:32:05.309  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:32:05.433  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:32:05.458  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:32:05.459  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.196 seconds (JVM running for 29617.603)
+2020-02-26 21:32:05.461  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:33:26.713  INFO 881 --- [Thread-155] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:33:26.714  INFO 881 --- [Thread-155] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:33:26.979  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:33:26.979 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:33:26.980  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:33:27.285  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:33:27.296  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 3 repository interfaces.
+2020-02-26 21:33:27.363  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:33:27.440  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:33:27.446  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 465 ms
+2020-02-26 21:33:27.668  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:33:27.818  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1841f9a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@516e14af, org.springframework.security.web.header.HeaderWriterFilter@2c9f6f5b, org.springframework.security.web.csrf.CsrfFilter@7338931e, org.springframework.security.web.authentication.logout.LogoutFilter@3e8aa964, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71487a32, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1fe01d5b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2e9b49c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60db47ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37690918, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ffdb60, org.springframework.security.web.session.SessionManagementFilter@66f9cb0d, org.springframework.security.web.access.ExceptionTranslationFilter@7fe9cda0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bea8439]
+2020-02-26 21:33:27.883  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:33:27.891  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:33:28.004  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:33:28.033  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:33:28.034  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.079 seconds (JVM running for 29700.175)
+2020-02-26 21:33:28.039  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:33:33.124  INFO 881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-26 21:33:33.141  INFO 881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-26 21:33:33.174 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:33:33.176 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 21:33:33.176 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:33.236 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@1ec9b048, com.ctc.pma.entities.Project@7d9d9e7f], projectStatusCnt=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@203547ed, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@69bffc33, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4ff34b24]}]
+2020-02-26 21:33:33.237 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:33.951 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:33:33.951 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 21:33:33.951 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:33.968 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@6af49ca0, com.ctc.pma.entities.Project@3cced188], projectStatusCnt=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@e951d85, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@53160b23, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@43e647c1]}]
+2020-02-26 21:33:33.969 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:37.728 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:33:37.728 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 21:33:37.728 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:37.736 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@4c8f878, com.ctc.pma.entities.Employee@58488163, com.ctc.pma.entities.Employee@5518f20a]}]
+2020-02-26 21:33:37.736 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:50.334 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:33:50.336 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.SecurityController.register () with arguments[s] = [{}]
+2020-02-26 21:33:50.336 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:33:50.341 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.SecurityController.register () with arguments[s] = [{userAccount=com.ctc.pma.entities.UserAccount@1f4cb5f2}]
+2020-02-26 21:33:50.341 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:34:17.496 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:34:17.497 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.SecurityController.saveUser () with arguments[s] = [{userAccount=com.ctc.pma.entities.UserAccount@554f2692, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.ctc.pma.entities.UserAccount@554f2692]
+2020-02-26 21:34:17.497 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:34:17.750 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.SecurityController.saveUser () with arguments[s] = [{userAccount=com.ctc.pma.entities.UserAccount@554f2692, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.ctc.pma.entities.UserAccount@554f2692]
+2020-02-26 21:34:17.751 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:34:17.761 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:34:17.762 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 21:34:17.762 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:34:17.769 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@3d03b9b, com.ctc.pma.entities.Project@19d2ddca], projectStatusCnt=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@67e97948, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@678e64ad, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@301e277e]}]
+2020-02-26 21:34:17.770 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:35:49.316  INFO 881 --- [Thread-164] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:35:49.318  INFO 881 --- [Thread-164] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:35:49.903  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:35:49.903 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:35:49.904  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:35:50.236  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:35:50.251  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 3 repository interfaces.
+2020-02-26 21:35:50.356  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:35:50.485  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:35:50.506  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 599 ms
+2020-02-26 21:35:50.829  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:35:50.970  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a63fd33, org.springframework.security.web.context.SecurityContextPersistenceFilter@41bb1cb3, org.springframework.security.web.header.HeaderWriterFilter@1f778bcb, org.springframework.security.web.csrf.CsrfFilter@61df3ffe, org.springframework.security.web.authentication.logout.LogoutFilter@2f991671, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72ba0d53, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@365eda8d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@652d0d0d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53d41a3e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@705eea5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@619770d2, org.springframework.security.web.session.SessionManagementFilter@5983f8b2, org.springframework.security.web.access.ExceptionTranslationFilter@ba33bc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b03f7a5]
+2020-02-26 21:35:51.066  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:35:51.075  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:35:51.189  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:35:51.236  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:35:51.244  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.521 seconds (JVM running for 29843.381)
+2020-02-26 21:35:51.250  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:35:58.544  INFO 881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-26 21:35:58.550  INFO 881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-02-26 21:35:58.552 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:35:58.553 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 21:35:58.553 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:35:58.581 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@31f152ab, com.ctc.pma.entities.Project@76b6a6d1], projectStatusCnt=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@747abd79, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3f715067, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4a09904c]}]
+2020-02-26 21:35:58.581 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:36:01.764 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:36:01.764 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 21:36:01.764 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:36:01.776 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@188af2b, com.ctc.pma.entities.Employee@ab3cac3, com.ctc.pma.entities.Employee@645e780c]}]
+2020-02-26 21:36:01.776 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:36:12.968 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:36:12.969 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 21:36:12.969 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:36:12.999 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@122f4c54, com.ctc.pma.entities.Project@341e6652], projectStatusCnt=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@789aa945, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7ede7d43, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1e10879c]}]
+2020-02-26 21:36:12.999 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:44:23.537  INFO 881 --- [Thread-173] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:44:23.539  INFO 881 --- [Thread-173] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:44:24.070  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Starting Application on harmeets-MacBook-Air.local with PID 881 (/Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management/target/classes started by harmeet in /Users/harmeet/Documents/workspace-spring-tool-suite-4-4.4.2.RELEASE/project.management)
+2020-02-26 21:44:24.071 DEBUG 881 --- [restartedMain] com.ctc.pma.Application                  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-26 21:44:24.071  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : The following profiles are active: dev
+2020-02-26 21:44:24.311  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-26 21:44:24.322  INFO 881 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 3 repository interfaces.
+2020-02-26 21:44:24.382  INFO 881 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa546d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-26 21:44:24.458  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-26 21:44:24.468  INFO 881 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 394 ms
+2020-02-26 21:44:24.737  INFO 881 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 21:44:24.925  INFO 881 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a70cdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@71593ede, org.springframework.security.web.header.HeaderWriterFilter@219e94b3, org.springframework.security.web.csrf.CsrfFilter@56d34356, org.springframework.security.web.authentication.logout.LogoutFilter@6663080, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5de5c9d0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ef1464e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d34c720, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36003a9f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63ee0be0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78352b60, org.springframework.security.web.session.SessionManagementFilter@3ddc13c0, org.springframework.security.web.access.ExceptionTranslationFilter@839f4ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46f86f81]
+2020-02-26 21:44:24.997  INFO 881 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-26 21:44:25.005  WARN 881 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-26 21:44:25.115  INFO 881 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-26 21:44:25.146  INFO 881 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-26 21:44:25.148  INFO 881 --- [restartedMain] com.ctc.pma.Application                  : Started Application in 1.247 seconds (JVM running for 30357.27)
+2020-02-26 21:44:25.162  INFO 881 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-26 21:50:50.681  INFO 881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-26 21:50:50.691  INFO 881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-02-26 21:50:59.541 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:50:59.542 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 21:50:59.542 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:50:59.562 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@76548f81, com.ctc.pma.entities.Project@2418aee9], projectStatusCnt=[{"value":1,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@360f55b4, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@12f1202c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@293775d3]}]
+2020-02-26 21:50:59.563 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:07.348 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:07.349 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{}]
+2020-02-26 21:51:07.349 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:07.356 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{projects=[com.ctc.pma.entities.Project@7c56f64b, com.ctc.pma.entities.Project@2f8a4a08]}]
+2020-02-26 21:51:07.356 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:09.867 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:09.867 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjectForm () with arguments[s] = [{}]
+2020-02-26 21:51:09.868 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:09.877 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjectForm () with arguments[s] = [{project=com.ctc.pma.entities.Project@6232d612, allEmployees=[com.ctc.pma.entities.Employee@165d1b1, com.ctc.pma.entities.Employee@424a59a3, com.ctc.pma.entities.Employee@7936f8cf]}]
+2020-02-26 21:51:09.877 DEBUG 881 --- [http-nio-8080-exec-7] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:20.933 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:20.933 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.createProject () with arguments[s] = [com.ctc.pma.entities.Project@6c0d4fbf, {project=com.ctc.pma.entities.Project@6c0d4fbf, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-26 21:51:20.934 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:20.956 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.createProject () with arguments[s] = [com.ctc.pma.entities.Project@6c0d4fbf, {project=com.ctc.pma.entities.Project@6c0d4fbf, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-26 21:51:20.957 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:20.966 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:20.966 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{}]
+2020-02-26 21:51:20.966 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:20.969 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{projects=[com.ctc.pma.entities.Project@3379e0c, com.ctc.pma.entities.Project@67519123, com.ctc.pma.entities.Project@480972de]}]
+2020-02-26 21:51:20.969 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:23.881 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:23.888 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 21:51:23.888 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:23.894 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@1f2f3149, com.ctc.pma.entities.Employee@617c80bb, com.ctc.pma.entities.Employee@2efaee4d]}]
+2020-02-26 21:51:23.895 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:24.863 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:24.863 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s] = [{}]
+2020-02-26 21:51:24.864 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:24.864 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s] = [{employee=com.ctc.pma.entities.Employee@352367ac}]
+2020-02-26 21:51:24.864 DEBUG 881 --- [http-nio-8080-exec-1] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:37.237 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:37.238 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.createEmployee () with arguments[s] = [com.ctc.pma.entities.Employee@569e90ed, {employee=com.ctc.pma.entities.Employee@569e90ed, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-26 21:51:37.239 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:37.264 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.createEmployee () with arguments[s] = [com.ctc.pma.entities.Employee@569e90ed, {employee=com.ctc.pma.entities.Employee@569e90ed, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-02-26 21:51:37.264 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:37.272 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 21:51:37.272 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 21:51:37.272 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 21:51:37.274 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@6d0757be, com.ctc.pma.entities.Employee@22087d43, com.ctc.pma.entities.Employee@5ca0daf2, com.ctc.pma.entities.Employee@5a45aea0]}]
+2020-02-26 21:51:37.274 DEBUG 881 --- [http-nio-8080-exec-3] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:05.353 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:05.357 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 22:11:05.357 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:05.399 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@3f0b6f9c, com.ctc.pma.entities.Project@26cd0140, com.ctc.pma.entities.Project@3840bc15], projectStatusCnt=[{"value":2,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4002b4, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@159ca2b0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6d6dbffd, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6db84546]}]
+2020-02-26 22:11:05.400 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:06.251 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:06.251 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 22:11:06.252 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:06.284 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@4e5142d8, com.ctc.pma.entities.Project@3ecf9af2, com.ctc.pma.entities.Project@796734e3], projectStatusCnt=[{"value":2,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7f63177, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@62da624e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4b241a67, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@75ee887]}]
+2020-02-26 22:11:06.284 DEBUG 881 --- [http-nio-8080-exec-2] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:22.310 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:22.310 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{}]
+2020-02-26 22:11:22.310 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:22.316 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{projects=[com.ctc.pma.entities.Project@78f0366f, com.ctc.pma.entities.Project@34696209, com.ctc.pma.entities.Project@16b58f7d]}]
+2020-02-26 22:11:22.316 DEBUG 881 --- [http-nio-8080-exec-4] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:26.182 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:26.184 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 22:11:26.184 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:26.197 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@779118db, com.ctc.pma.entities.Employee@7f5bc70, com.ctc.pma.entities.Employee@16ba3d75, com.ctc.pma.entities.Employee@6912b8b9]}]
+2020-02-26 22:11:26.197 DEBUG 881 --- [http-nio-8080-exec-5] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:42.700 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:42.700 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 22:11:42.700 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:42.705 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@32edb0a6, com.ctc.pma.entities.Employee@53a5bb31, com.ctc.pma.entities.Employee@6c22a9b6, com.ctc.pma.entities.Employee@765e38f7]}]
+2020-02-26 22:11:42.705 DEBUG 881 --- [http-nio-8080-exec-6] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:53.171 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:53.172 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{}]
+2020-02-26 22:11:53.172 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:53.181 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.HomeController.displayHome () with arguments[s] = [{versionNumber=dev, projectList=[com.ctc.pma.entities.Project@69374a2a, com.ctc.pma.entities.Project@32bd2e4f, com.ctc.pma.entities.Project@15a390d5], projectStatusCnt=[{"value":2,"label":"INPROGRESS"},{"value":1,"label":"COMPLETED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@75caec37, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@ccd52f3, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@59571ba9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7bdeffe0]}]
+2020-02-26 22:11:53.182 DEBUG 881 --- [http-nio-8080-exec-8] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:55.011 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:55.012 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{}]
+2020-02-26 22:11:55.014 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:55.019 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{projects=[com.ctc.pma.entities.Project@7cc5d675, com.ctc.pma.entities.Project@4f829d, com.ctc.pma.entities.Project@3cdb2701]}]
+2020-02-26 22:11:55.019 DEBUG 881 --- [http-nio-8080-exec-9] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:56.493 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  :  
+ 
+ 
+ 
+2020-02-26 22:11:56.493 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ Before Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2020-02-26 22:11:56.493 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:11:56.499 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : ************ After Method Execution ************ 
+ com.ctc.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.ctc.pma.entities.Employee@3e358933, com.ctc.pma.entities.Employee@44ad4364, com.ctc.pma.entities.Employee@5371cae5, com.ctc.pma.entities.Employee@10930e1e]}]
+2020-02-26 22:11:56.499 DEBUG 881 --- [http-nio-8080-exec-10] c.c.pma.logging.ApplicationLoggerAspect  : _________________________________________________ 
+ 
+ 
+
+2020-02-26 22:38:27.446  INFO 881 --- [RMI TCP Connection(630)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-02-26 22:38:27.475  INFO 881 --- [RMI TCP Connection(630)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-26 22:38:27.479  INFO 881 --- [RMI TCP Connection(630)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
